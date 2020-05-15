@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<style>
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)), url(images/background.jpg);
+}
+.nav{
+	width:100%;
+	height:60px;
+	background-color: hotpink;
+    box-shadow:rgba(0,0,0,0.) 0 2px 6px 0;}
+ul {list-style-type: none;}
+
+ul li{ float:right;
+		width:140px;
+		height:60px;
+		font-size:20px;
+		border:1px solid #000;
+		line-height: 60px;
+		text-align:center;
+		
+	}
+ul li a{
+	text-decoration: none;
+	color: deepskyblue;
+	background-color: aliceblue;
+	display:block;
+}
+ul li a:hover{
+	background-color:crimson;
+	transition: 1s all ease;
+}
+ul li ul li{
+	display: none;
+	background-color:darkcyan;
+	box-shadow:rgba(0,0,0,0.5) 0 2px 6px 0;
+	height: 40px:
+	transition: 1s all ease;
+	}
+	
+ul li:hover ul li {
+	display: block;
+	animation: drop 1s ease;
+}
+.container{ 
+		border-radius:4px;
+		background-color:  Dark Salmon;
+		padding:20px;
+}
+input[type="text"],textarea{
+	width: 100%;
+	padding:12px;
+	border: 1px solid #fff;
+	border-radius: 4px solid #fff;
+	margin-top: 16px;
+	background-color: #FFFF00;
+	box-sizing: border-box;
+	color: #008080;
+}
+input[type="text"]:focus{
+	background-color: #FFFF00;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+textarea:focus{
+	background-color: #FFFF00;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+label{
+	color: #FF6347;
+}
+input[type="submit"] {
+	background-color: #FFFF00;
+	color: #008080;
+	padding: 12px 48px;
+	border-radius: 4px solid #fff;
+	border: 2px solid #fff;
+	cursor:pointer;
+}
+input[type="submit"]:hover{
+	background-color: #FFFF00;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+p{color: lawngreen;
+text-align: center;
+font-size: 30px;
+font-family: segoe UI symbol;
+font-style: bold;
+padding: 12px;
+margin: 50px;
+}
+
+	</style>
+	</head>
+	<ul class="navbar navbar-expand-lg navbar-light bg-light">
+		<li><big><a href="index1.html"> Home</a></big></li>
+		<li><big><a href="about_me.html">About Me</a></big></li>
+		<li><big><a href="shop.html">My Shop</a></big>
+		<ul>
+			<li><a href="fr.html">Ferrarossa Beauty </a></li>
+			<li><a href="kk.html">Kekasih </a></li>
+		</ul>
+		</li>
+		<li><big><a href="contact.html">Contact Me</a></big></li>
+    </ul>
+	<div class="container">
+	<p>Have a speaking engagement you'd like to discuss?</p>
+	<p>Just want to say HI? Lets chat!</p>
+	
+	<form>
+		<label> First Name</label>
+		<input type="text" id="fname" placeholder="Your First Name">
+		<label> Last Name</label>
+		<input type="text" id="lname" placeholder="Your Last Name">
+		<label> Email</label>
+		<input type="text" id="email" placeholder="Your Email">
+		<label> Subject</label>
+		<textarea id="subject" placeholder="Write Something.." style="height: 200px"></textarea>
+		<input type="submit" value="SEND" onClick="submit() ">
+	</form>
+		
+	</div>
+	<script type="text/javascript">
+		function submit() {
+			alert("THANK YOU for contacting me ! :)");
+		}
+		  submit();
+		  </script>
+
+
+	</body>
+</html>
